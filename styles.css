@@ -33,6 +33,7 @@
 nav{
     border-top: 2px solid #c4c4c4;
     border-bottom: 2px solid #c4c4c4;
+    
 }
 
 nav ul {
@@ -85,4 +86,8 @@ main p {
     .col:not(:last-child) {
         border-right: none;
     }
+}
+
+.scoreboard{
+    width: 400px
 }
