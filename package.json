@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Anik700/scoreboard/issues"
   },
-  "homepage": "https://github.com/Anik700/scoreboard#readme"
+  "homepage": "https://github.com/Anik700/scoreboard#readme",
+  "dependencies": {
+    "bulma": "^0.9.3"
+  }
 }
