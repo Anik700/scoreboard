@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@200;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@200;400;600&display=swap');
 
 * {
     margin: 0;
@@ -8,11 +8,11 @@
 }
 
 
-.container{
+.hcontainer{
     display:grid;
     height:100vh;
-    padding-right: 15%;
-    padding-left: 15%;
+    padding-right: 20%;
+    padding-left: 20%;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: .25fr 2fr 1fr 1.5fr 1fr .2fr;
     grid-template-areas:
@@ -24,50 +24,66 @@
         "footer footer footer"
 }
 
+
+
+.highlight{
+    grid-area: highlight;
+    padding:1rem;
+    flex: 1;
+    border-right: 2px solid #c4c4c4;
+}
+
 nav{
-    background: #a7ffeb;
+    padding:1rem;
+    flex: 1;
+    border-right: 2px solid #c4c4c4;
     grid-area: nav;
 }
 
-.highlight{
-    background: #78ecd1;
-    grid-area: highlight;
-}
-
 .spotarc{
-    background: #78bdec;
+    padding:1rem;
+    flex: 1;
+    border-right: 2px solid #c4c4c4;
+    border-top: 2px solid #c4c4c4;
     grid-area: spotarc;
 }
 
 .podspot{
-    background: #78b4ec;
+    padding:1rem;
+    flex: 1;
+    border-right: 2px solid #c4c4c4;
+    border-top: 2px solid #c4c4c4;
     grid-area: podspot;
 }
 
 .podep{
-    background: #7883ec;
+    padding:1rem;
+    flex: 1;
+    border-right: 2px solid #c4c4c4;
+    border-top: 2px solid #c4c4c4;
     grid-area: podep;
 }
 
 .recart{
-    background: #b878ec;
+    padding:1rem;
+    flex: 1;
+    border-right: 2px solid #c4c4c4;
     grid-area: recart;
-    border-left: 
 }
 
 .sidebar{
-    background: #ec78bc;
+    padding:1rem;
+    flex: 1;
     grid-area: sidebar;
 }
 
 
 footer{
-    background: #a7ffeb
     grid-area: footer;
 }
 
 @media only screen and (max-width: 550px) {
-    .container{
+    .hcontainer{
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 2.2fr 2.2fr 1.2fr 1.2fr 2.2fr 1.2fr .25fr;
         grid-template-areas:
@@ -122,4 +138,63 @@ nav a{
 
 .scoreboard{
     width: 400px
+}
+
+.acontainer{
+    display:grid;
+    height:100vh;
+    padding-right: 20%;
+    padding-left: 20%;
+    grid-template-columns: 1fr .30fr;
+    grid-template-rows: .25fr 2fr .75fr .75fr .2fr;
+    grid-template-areas:
+        "nav nav"
+        "ahighlight sidebar2"
+        "spotarc2 sidebar2"
+        "recart2 sidebar2"
+        "footer footer"
+}
+
+.ahighlight{
+    padding:1rem;
+    flex: 1;
+    border-right: 2px solid #c4c4c4;
+    grid-area: ahighlight;
+}
+
+.spotarc2{
+    padding:1rem;
+    flex: 1;
+    border-right: 2px solid #c4c4c4;
+    border-top: 2px solid #c4c4c4;
+    grid-area: spotarc2;
+}
+
+.recart2{
+    padding:1rem;
+    flex: 1;
+    border-right: 2px solid #c4c4c4;
+    border-top: 2px solid #c4c4c4;
+    grid-area: recart2;
+}
+
+.sidebar2{
+    padding:1rem;
+    flex: 1;
+    border-right: 2px solid #c4c4c4;
+    grid-area: sidebar2;
+}
+
+@media only screen and (max-width: 550px) {
+    .hcontainer{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 2.2fr 2.2fr 1.2fr 1.2fr 2.2fr 1.2fr .25fr;
+        grid-template-areas:
+            "nav"
+            "ahighlight"
+            "spotarc2"
+            "recart2"
+            "sidebar2"
+            "footer"
+    }
 }
