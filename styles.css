@@ -33,12 +33,6 @@
     border-right: 2px solid #c4c4c4;
 }
 
-nav{
-    padding:1rem;
-    flex: 1;
-    border-right: 2px solid #c4c4c4;
-    grid-area: nav;
-}
 
 .spotarc{
     padding:1rem;
@@ -109,13 +103,20 @@ footer{
     margin: 1rem 0 0.5rem;
 }
 
-.logo i {
+.logo i{
     font-size: 2rem;
     margin-right: 1rem;
 }
 
 nav{
     border-top: 2px solid #000000;
+}
+
+nav{
+    padding: 0;
+    flex: 1;
+    border-right: 2px solid #c4c4c4;
+    grid-area: nav;
 }
 
 nav ul {
