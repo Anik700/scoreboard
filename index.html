@@ -8,6 +8,7 @@
         <title>Scoreboard-Home</title>
         <link rel="stylesheet" type="text/css" href="/styles.css">
         <link rel="stylesheet" href="node_modules/bulma/css/bulma.css"/>
+        <link rel="stylesheet" href = 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins:wght@200;400;600&display=swap'>
 
     </head>
     <body>
@@ -31,13 +32,26 @@
         <main class="hcontainer">
                 <div class="highlight">
                     <h3>Highlight Article</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim nunc eu mauris convallis, blandit sollicitudin nulla semper. </p>
-
-                    <img src="all-star.png" alt="all-star">
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim nunc eu mauris convallis, blandit sollicitudin nulla semper.</p>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim nunc eu mauris convallis, blandit sollicitudin nulla semper.</p>
+                    <div class="card">
+                        <div class="card-image">
+                          <figure class="image is-4by3">
+                            <img src="all-star.png" alt="all-star">
+                          </figure>
+                        </div>
+                        <div class="card-content">
+                          <div class="media">
+                            <div class="media-left">
+                              <figure class="image is-48x48">
+                                <img src="all-star.png" alt="all-star">
+                              </figure>
+                            </div>
+                            <div class="media-content">
+                              <p class="title is-4">Let's Eat Children</p>
+                              <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
 
                 <div class="recart">
@@ -87,8 +101,10 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim nunc eu mauris convallis, blandit sollicitudin nulla semper.</p>
                 </div>
 
-                <footer>
-                    <h3>An Ani Project</h3>
+                <footer class="footer">
+                    <div class="content has-text-centered">
+                        <h3>An Ani Project</h3>
+                    </div>
                 </footer>
 
         </main>
